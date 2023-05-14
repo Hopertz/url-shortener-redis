@@ -16,7 +16,7 @@ type UrlCReationRequest struct {
 }
 
 func (app *application) welcomeHandler(w http.ResponseWriter, r *http.Request) {
-	js := `{"status" :"available"}"`
+	js := `{"status" :"available"}`
 	w.Header().Set("Content-Type", "application/json")
 	w.Write([]byte(js))
 }
